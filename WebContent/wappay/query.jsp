@@ -35,8 +35,13 @@
      
      AlipayTradeQueryResponse alipay_response =client.execute(alipay_request);
      System.out.println(alipay_response.getBody());
+
+     /**
+      * {"out_trade_no":"2023214175625702","trade_no":""}^_^52ms,356ms,8ms
+      * {"alipay_trade_query_response":{"code":"10000","msg":"Success","buyer_logon_id":"cww***@sandbox.com","buyer_pay_amount":"0.00","buyer_user_id":"2088722007963943","buyer_user_type":"PRIVATE","invoice_amount":"0.00","out_trade_no":"2023214175625702","point_amount":"0.00","receipt_amount":"0.00","send_pay_date":"2023-02-14 17:57:49","total_amount":"0.01","trade_no":"2023021422001463940503936091","trade_status":"TRADE_SUCCESS"},"sign":"CvNCk4bHA51tI12f5U2ZlY0/DWGBqSSdbmZQ8qsKvBAmfWCzgfMPU6D4H+zjXQ5Ou4IfVOe0hGxIvt2tps50ga8QGOlK9ea904qCp1lzNyxb6t71A0lQhbn+HdOJ0oZctIBpVXoVccYnoh8DJsCDmwdkSVNGYcHjTSznTJ6s/gTxPiVDkrEfjx9RAlNr0gGgrW8QRd5j5IvV9xTgdfOtV/SQx5i9Ni/bmjdIUzAyH5CpBUlj1yLg5lcY7oS4aSLCgZcrZKH5gaePI97qFbag6IB7zfNpvG+xe9a6vKZWI69gxv/0PEhg5bDOEOVtEGNnRAblif/C2Pkc7S12wNxmjg=="}
+      */
  }
-%>
+ %>
 <!DOCTYPE html>
 <html>
 	<head>
